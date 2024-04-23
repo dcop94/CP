@@ -27,5 +27,8 @@
     <ClCompile Include="if_switch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="third prac.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -2,8 +2,8 @@
 
 int main()
 {
-	int a;
-	int b;
+	float a;
+	float b;
 	char num;
 	
 	std::cout << "첫번째 수를 입력하세요\n";
