@@ -32,4 +32,6 @@ int main()
 		std::cout << "계산 값은" << a << "/" << b << "=" << a / b << "입니다\n";
 		break;
 	}
+
+	return 0;
 }
