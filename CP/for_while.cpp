@@ -18,7 +18,7 @@ int main()
 
 	}
 
-	std::cout << "1부터 a까지의 합은 :" << sum;
+	std::cout << "1부터 a까지의 합은 : " << sum;
 
 	return 0;
 
