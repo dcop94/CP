@@ -18,8 +18,11 @@ void main()
 			}
 
 		} // list를 입력 했을 시
+
 		else
 		{
+			cout << " 나라이름을 입력하세요 (EN) (list를 입력 시 나라목록이 나옵니다) : \n";
+			cin >> nation;
 			bool input = false; // 입력 값이 거짓이라면 for문 실행 안함 아래 if 문 실행
 			for (int i = 0; i < citySize; i++)
 			{
