@@ -49,7 +49,7 @@ int main()
 
 
 // 동적 배열 해제
-	for (int i = 0; i < x; ++i)
+	for (int i = 0; i < x; i++)
 	{
 		delete[] arr2[i];
 	}
