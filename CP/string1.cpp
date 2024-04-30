@@ -11,13 +11,13 @@ int main()
 	cout << s.length() << endl;
 	// s 문자열의 길이 출력
 
-	cout << s.at(100) << endl;
+	cout << s.at(99) << endl;
 	// 100번째 문자 출력(index는 0부터 시작)
 	
 	cout << s.find("two") << endl;
 	//"two"라는 문자가 처음 나오는 index 출력
 
-	cout << s.find("two") + 1 << endl;
+	cout << s.find("two", s.find("two"+1)) << endl;
 	//"two"라는 문자가 두번째 나오는 index 출력
 
 
