@@ -20,7 +20,7 @@ vector<Member> Member_info()
 		if (name == "나가기")
 			break;
 
-		cout << " 비밀번호 입력 : ";
+		cout << " 비밀번호 : ";
 		getline(cin, password);
 
 		members.push_back({ name, password });
@@ -44,12 +44,6 @@ void Write_member_file(const vector<Member>& members)
 	cout << " 위 회원 정보가 파일에 저장 되었습니다. " << endl;
 }
 
-void Write_member_tel_file(const string& name, const string& tel)
-{
-	ofstream member_tel_file("member_tel.txt");
-	member_tel_file << " 이름 : " << name << " 전화번호 : " << tel << endl;
-	member_tel_file.close();
-}
 
 void Read_member_file()
 {

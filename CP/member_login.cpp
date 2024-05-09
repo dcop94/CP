@@ -13,7 +13,7 @@ bool login_member(const string& name, const string& password, const vector < Mem
 
 			string tel;
 			cout << " 전화번호 입력 : ";
-			getline(cin, tel);
+			cin >> tel;
 
 			Write_member_tel_file(name, tel);
 
