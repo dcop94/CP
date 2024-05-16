@@ -123,7 +123,7 @@
     <ClCompile Include="class3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="classgame.cpp">
+    <ClCompile Include="class4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

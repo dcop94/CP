@@ -139,7 +139,7 @@
     <ClCompile Include="class3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="classgame.cpp" />
+    <ClCompile Include="class4.cpp" />
     <ClCompile Include="DynMulArray.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
