@@ -1,32 +1,31 @@
 #include <iostream>
 #include <thread>
-#include <mutex>
+#include <atomic>
 
 using namespace std;
 
-mutex mtx; // 뮤텍스 객체 생성
 
 class BankAccount // 클래스 생성
 {
 private:
-	int balance;
+	atomic<int> balance;
 
 public:
 	BankAccount() : balance(1000) {}
 
 	void deposit(int amount)
 	{
-		mtx.lock(); // 뮤텍스 잠금
-		balance = balance + amount;
+		
+		balance.fetch_add(amount);
 		cout << " 입금액 " << amount << " 총액 " << balance << endl;
-		mtx.unlock(); // 뮤텍스 해제
+		
 	}
 	void withdraw(int amount)
 	{
-		mtx.lock();
-		balance = balance - amount;
+	
+		balance.fetch_sub(amount);
 		cout << " 출금액 " << amount << " 총액 " << balance << endl;
-		mtx.unlock();
+	
 	}
 };
 
